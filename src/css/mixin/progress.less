@@ -1,0 +1,12 @@
+.progress(@valueColor,@barColor) {
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 4px;
+    &::-webkit-progress-value {
+    	background-color: @valueColor;
+	}
+	&::-webkit-progress-bar {
+	    background-color: @barColor;
+	}
+} 

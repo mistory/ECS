@@ -1,0 +1,56 @@
+/*栅格*/
+.e-grid {
+    overflow: hidden;
+    &.e-grid-p{
+    	padding-left: .3rem;
+    	[class^=e-grid-] {
+		    padding-right: .3rem;
+		  }
+    }
+}
+.e-grid(4);
+.e-grid(3);
+.e-grid(2);
+
+
+.e-flex{
+    display: -webkit-box;
+    box-sizing: border-box;
+    width: 100%;
+    &-v{
+    	-webkit-box-orient: vertical;
+    }
+    &-box-end{
+      -webkit-box-pack: end;
+    }
+}
+.e-flex(5);
+
+.e-menu {
+	.e-flex;
+  box-shadow: 0 0 4px rgba(0,0,0,.2);
+  width: 100%; 
+  height: 1.25rem;
+  z-index: 9;
+  background-color: #fff;
+	li {
+	  display: -webkit-box;
+    width: 100%;
+    -webkit-box-flex: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    p{
+      font-size: .3125rem; 
+      color: #777;
+    } 
+	}
+}
+
+.e-flex-vertical{
+  -webkit-box-orient: vertical;
+  -webkit-box-pack: center;
+  display: -webkit-box;
+}
+
+

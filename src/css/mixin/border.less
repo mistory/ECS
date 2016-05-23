@@ -1,0 +1,65 @@
+.e-border(left) {
+    &:after {
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 1px;
+        transform: scaleX(0.5);
+    }
+}
+
+.e-border(right) {
+    &:after {
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 1px;
+        transform: scaleX(0.5);
+    }
+}
+
+.e-border(top) {
+    &:after {
+        left: 0;
+        top: 0;
+        height: 1px;
+        width: 100%;
+        transform: scaleY(0.5);
+    }
+}
+
+.e-border(bottom) {
+    &:after {
+        left: 0;
+        bottom: 0;
+        height: 1px;
+        width: 100%;
+        transform: scaleY(0.5);
+    }
+}
+
+.e-border(all) {
+    &:after {
+        left: 0;
+        top: 0;
+        width: 200%;
+        height: 200%;
+        border: 1px solid @borderColor;
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0;
+        box-sizing: border-box;
+        border-radius: 6px;
+        background-color: transparent!important;
+    }
+}
+
+.e-border(@_c) {
+    position: relative;
+    &:after {
+        .content();
+        background: @borderColor;
+        transform-origin: 0 0;
+    }
+}

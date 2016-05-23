@@ -1,0 +1,38 @@
+/*按钮*/
+.e-btn{
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0 .3rem;
+    border-radius: 5px;
+    font-size: .4375rem;
+    line-height: 2.3333;
+    background-color: #fff;
+    color: #333;
+    &-small{
+        display: inline-block;
+        width: auto!important;
+        font-size: .375rem;
+        border-radius: 4px;
+    }
+    &-default{
+        .btn(@btn-default-color,@btn-default-bg)
+    }
+    &-primary{
+        .btn(@btn-primary-color,@btn-primary-bg)
+    }
+}
+
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  &.e-btn {
+    width: 100%;
+  }
+  &:not(button) {
+    border: 0;
+  }
+}

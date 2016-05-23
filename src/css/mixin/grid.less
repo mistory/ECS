@@ -1,0 +1,16 @@
+.e-grid(@n, @i: 1) when (@i < @n) {
+  .e-grid-@{i}-@{n} {
+    width: (@i * 100% / @n);
+    float: left;
+    display: inline-block;
+    box-sizing: border-box;
+  }
+  .e-grid(@n, (@i + 1));
+}
+
+.e-flex(@n, @i: 1) when (@i =< @n) {
+  .e-flex-@{i} {
+	  -webkit-box-flex: @i;
+  }
+  .e-flex(@n, (@i + 1));
+}

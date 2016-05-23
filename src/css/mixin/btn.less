@@ -1,0 +1,29 @@
+.btn(@fontColor,@bgColor){
+    background-color: @bgColor;
+    color: @fontColor;
+    &:active{
+        &:not(.disabled){
+            background-color: darken(@bgColor, 10%);
+            color: darken(@fontColor, 10%);
+        }
+    }
+    &:disabled,
+    &.disabled{
+        cursor: not-allowed;
+        opacity: 0.5;
+    }
+    &:after {
+        .content();
+        width: 200%;
+        height: 200%;
+        top: 0;
+        left: 0;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0;
+        box-sizing: border-box;
+        border-radius: 10px;
+    }
+}

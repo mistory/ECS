@@ -1,0 +1,32 @@
+{
+  "name": "bulid",
+  "version": "0.0.1",
+  "description": "bulid tool",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "gaopeng",
+  "license": "MIT",
+  "dependencies": {
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.8.5",
+    "html-webpack-plugin": "^2.16.0",
+    "less": "^2.6.1",
+    "less-loader": "^2.2.3",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.0"
+  },
+  "devDependencies": {
+    "css-loader": "^0.23.0",
+    "webpack": "^1.12.2",
+    "webpack-dev-server": "^1.12.1",
+    "html-webpack-plugin": "^2.7.1",
+    "extract-text-webpack-plugin": "1.0.1",
+    "style-loader": "0.13.0",
+    "file-loader": "^0.8.4",
+    "url-loader": "^0.5.6"
+  }
+}
